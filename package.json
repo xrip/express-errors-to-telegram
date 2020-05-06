@@ -2,9 +2,11 @@
     "name": "express-errors-to-telegram",
     "description": "Express error handling middleware for reporting application errors to Telegram. Fully supports typescript.",
     "author": "Ilya Maslennikov (https://xrip.ru)",
-    "version": "1.0.0",
-    "main": "index.js",
-    "types": "index.d.ts",
+    "bugs": {
+        "url": "https://github.com/xrip/express-errors-to-telegram/issues"
+    },
+    "homepage": "https://github.com/xrip/express-errors-to-telegram",
+    "version": "1.0.1",
     "license": "MIT",
     "keywords": [
         "errors",
@@ -14,9 +16,11 @@
         "typescript",
         "typescript-library"
     ],
+    "main": "index.js",
+    "types": "index.d.ts",
     "scripts": {
         "build": "tsc --declaration",
-        "publish": "rimraf ./dist/ && yarn build && cp package.json ./dist/package.json && yarn publish ./dist/",
+        "publish": "rimraf ./dist/ && yarn build && cp package.json ./dist/package.json && cp readme.md ./dist/readme.md && yarn publish ./dist/",
         "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx ./src/",
         "eslint:fix": "eslint --cache --fix --ext .js,.jsx,.ts,.tsx ./src/"
     },
@@ -35,5 +39,9 @@
         "express": "^4.17.1",
         "rimraf": "^3.0.2",
         "typescript": "^3.7.4"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/xrip/express-errors-to-telegram.git"
     }
 }
