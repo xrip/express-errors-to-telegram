@@ -9,7 +9,7 @@ const htmlEntities = (text: string): string => text
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#039;');
 
-export default (botToken: string, chatId: string, options: { handle4xx: boolean; handle5xx: boolean } = { handle4xx: false, handle5xx: true }) => (error: any, request: Request, response: Response, next: NextFunction) => {
+export = (botToken: string, chatId: string, options: { handle4xx: boolean; handle5xx: boolean } = { handle4xx: false, handle5xx: true }) => (error: any, request: Request, response: Response, next: NextFunction) => {
     if (!options.handle5xx && (Number(error.status) >= 500 && Number(error.status) < 600) || !options.handle4xx && (Number(error.status) >= 400 && Number(error.status) < 500)) {
         return next();
     }
