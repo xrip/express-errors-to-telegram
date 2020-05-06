@@ -6,7 +6,7 @@
         "url": "https://github.com/xrip/express-errors-to-telegram/issues"
     },
     "homepage": "https://github.com/xrip/express-errors-to-telegram",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "license": "MIT",
     "keywords": [
         "errors",

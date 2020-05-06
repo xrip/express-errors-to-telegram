@@ -5,7 +5,7 @@
 ## Install
 
 ```shell script
-$ yarn express-errors-to-telegram --save
+$ yarn add express-errors-to-telegram --save
 ```
 or if you prefer npm
 ```shell script
