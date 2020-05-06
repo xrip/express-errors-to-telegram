@@ -20,7 +20,7 @@
     "types": "index.d.ts",
     "scripts": {
         "build": "tsc --declaration",
-        "publish": "rimraf ./dist/ && yarn build && cp package.json ./dist/package.json && cp readme.md ./dist/readme.md && yarn publish ./dist/",
+        "pub": "rimraf ./dist/ && yarn build && cp package.json ./dist/package.json && cp readme.md ./dist/readme.md && yarn publish ./dist/",
         "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx ./src/",
         "eslint:fix": "eslint --cache --fix --ext .js,.jsx,.ts,.tsx ./src/"
     },
