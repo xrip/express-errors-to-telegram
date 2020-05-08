@@ -6,7 +6,7 @@
 
 1) Obtain new bot token via @BotFather
 2) Create a *public* channel and add your bot to the channel. After step 3 you can make channel private.
-3) Open https://api.telegram.org/bot<botToken>/getChat?chat_id=@<channel> where botToken is token obtained at step 1 and channel is channel name created at step 2.
+3) Open ``https://api.telegram.org/bot<botToken>/getChat?chat_id=@<channel>`` where botToken is token obtained at step 1 and channel is channel name created at step 2.
 From response you need number from **id** field (e.g. -10014XXX54925):
 >```json
 >{"ok":true,"result":{"id":-1001411154925,"title":"<yout channel title>","username":"<your bot name>","type":"channel"}}
