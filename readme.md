@@ -1,4 +1,5 @@
 # express-errors-to-telegram
+[![NPM](https://nodei.co/npm/express-errors-to-telegram.png?downloads=true&stars=true)](https://nodei.co/npm/express-errors-to-telegram/)
 
 > Express error handling middleware for reporting application errors to Telegram. Fully supports typescript.
 
